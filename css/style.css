@@ -22,6 +22,7 @@ navbar
 .nav-menu {
     display: flex;
     justify-content: space-evenly;
+    /* position: sticky; */
 }
 .nav-menu ul {
     display: flex;
@@ -112,9 +113,14 @@ categories
     height: 110px;
     border-radius: 10px;
     color: #F1F1F1;
+    cursor: pointer;
 }
 .watch-item img {
     width: 100px;
+    transition: transforms 0.3s;
+}
+.watch-item img:hover {
+    transform: scale(1.1);
 }
 .bag-item {
     background: linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%);
@@ -122,9 +128,14 @@ categories
     height: 110px;
     border-radius: 10px;
     color: #F1F1F1;
+    cursor: pointer;
 }
 .bag-item img {
     width: 100px;
+    transition: transforms 0.3s;
+}
+.bag-item img:hover {
+    transform: scale(1.1);
 }
 .shoe-item {
     background: linear-gradient(170.41deg, #4289FF -10.89%, #3F07F8 92.77%);
@@ -132,9 +143,14 @@ categories
     height: 110px;
     border-radius: 10px;
     color: #F1F1F1;
+    cursor: pointer;
 }
 .shoe-item img {
     width: 100px;
+    transition: transforms 0.3s;
+}
+.shoe-item img:hover {
+    transform: scale(1.2);
 }
 /* -------------------------
 shoes categories
@@ -161,6 +177,11 @@ shoes categories
     border-radius: 10px;
     margin-left: 40px;
     box-shadow: 0 0 5px gray;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.content-item:hover {
+    transform: scale(1.1);
 }
 .content-item img {
     width: 80%;
@@ -182,6 +203,7 @@ shoes categories
     padding: 10px 20px;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 /* ---------------------------
 backpack categories
@@ -193,6 +215,11 @@ backpack categories
     border-radius: 10px;
     margin-left: 40px;
     box-shadow: 0 0 5px gray;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.product-item:hover {
+    transform: scale(1.1);
 }
 .product-item img {
     width: 80%;
@@ -214,6 +241,7 @@ backpack categories
     padding: 10px 20px;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 /* ---------------------------
 footer 
